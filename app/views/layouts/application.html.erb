@@ -25,14 +25,14 @@
   	  	  <span class="icon-bar"></span>
   	  	</button> <!-- hamburger nav button -->
   	  	<div class="projectName navbar-brand">
-  	  	  <a href="#" title="Home">Kyle's App</a>
+  	  	  <%= link_to 'Kyle\'s App', static_pages_index_path %>
   	  	</div> <!-- projectName -->
   	  </div> <!-- navbar-header -->
   	  <div class="navbar-collapse collapse">
   	  	<ul class="nav navbar-nav navbar-right">
-  	  	  <li><a href="#" title="Home">Home</a></li>
-  	      <li><a href="#" title="About Me">About</a></li>
-  	      <li><a href="#" title="Contact Information">Contact</a></li>
+  	  	  <li><%= link_to 'Specials', root_path %></li>
+  	      <li><%= link_to 'About', static_pages_about_path %></li>
+  	      <li><%= link_to 'Contact', static_pages_contact_path %></li>
   	    </ul>
   	  </div> <!-- navbar-collapse -->
   	</div> <!-- container-fluid -->
