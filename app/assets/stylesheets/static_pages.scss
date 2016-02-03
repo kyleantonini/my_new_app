@@ -8,11 +8,39 @@ body {
 	position: relative;
 }
 
-// Index //
-.img-responsive {
+/* Index */
+.row>.img-responsive {
     margin-left: 20px;	
 }
 
+/* Landing Page */
+.carousel-inner>.item.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-inner>.item>img {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-indicators .active {
+	background-color: black;
+}
+.carousel-indicators li {
+	border: 1px solid black;
+}
+.carousel p {
+	margin-left: 0;
+	font-size: 3em;
+}
+.carousel-caption {
+	color: black;
+	text-shadow: 2px 2px 2px green;
+}
+
+/* Font */
 h1,
 h2,
 h3 {
