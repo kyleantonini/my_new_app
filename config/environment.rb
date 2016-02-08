@@ -4,7 +4,7 @@ require File.expand_path('../application', __FILE__)
 # Initialize the Rails application.
 Rails.application.initialize!
 
-# Enable ActionMail to use Sendgrid plugin to send emails from Heroku
+# Enable ActionMailer to use Sendgrid plugin to send emails from Heroku
 ActionMailer::Base.smtp_settings = {
 	:address => 'smtp.sendgrid.net',
 	:port => '587',
