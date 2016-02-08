@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+* { box-sizing: border-box; }
+
+body {
+	position: relative;
+}
 
 /*** Navigation Bar ***/
 .projectName a {
@@ -36,7 +41,19 @@
 	transition: color 300ms;
 	-webkit-transition: color 300ms;
 }
-
+.navbar-form {
+	position: fixed;
+	vertical-align: center;
+	margin-left: 10em;
+}
+.nav a {
+	margin-left: 0;
+}
+@media (max-width: 777px) {
+	.navbar-form {
+		display:none;
+	}
+}
 /*footer*/
 footer {
 	padding-top: 20px;

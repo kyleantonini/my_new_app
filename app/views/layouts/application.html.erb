@@ -28,14 +28,24 @@
   	  	  <%= link_to 'Kyle\'s App', static_pages_index_path %>
   	  	</div> <!-- projectName -->
   	  </div> <!-- navbar-header -->
+
+      
   	  <div class="navbar-collapse collapse">
-  	  	<ul class="nav navbar-nav navbar-right">
+  	  	<%= form_tag("/products", method: "get", class: "navbar-form", role: "search") do %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search", class: "btn btn-default") %>
+          <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          
   	  	  <li><%= link_to 'Specials', root_path %></li>
           <li><%= link_to 'Products Listing', products_path %></li>
   	      <li><%= link_to 'About', static_pages_about_path %></li>
   	      <li><%= link_to 'Contact', static_pages_contact_path %></li>
   	    </ul>
   	  </div> <!-- navbar-collapse -->
+      
+      
+
   	</div> <!-- container-fluid -->
   	
   </nav> <!-- end navbar -->
@@ -46,8 +56,13 @@
   <br>
   <br>
   <footer>
-  	<p>&copy; 2016 Kyle Antonini</p>
+  	
+
+    <p>&copy; 2016 Kyle Antonini</p>
   	<a href="https://twitter.com/KyleAntonini" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @KyleAntonini</a>
+
+    
   </footer>
+
 </body>
 </html>
