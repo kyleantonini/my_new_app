@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
   def contact_form(email, name, message)
   	@message = message
   	mail(:from => email,
-  		:to =>  'app46040154@heroku.com',
+  		:to =>  'kyleantonini@gmail.com',
   	    :subject => "A new contact form message from #{name}")
   end
 end
