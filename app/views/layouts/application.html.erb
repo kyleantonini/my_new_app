@@ -42,6 +42,15 @@
   	      <li><%= link_to 'About', static_pages_about_path %></li>
   	      <li><%= link_to 'Contact', static_pages_contact_path %></li>
   	    </ul>
+        <ul class="nav pull-right">
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+          </li>
+        </ul>
   	  </div> <!-- navbar-collapse -->
       
       
@@ -49,6 +58,12 @@
   	</div> <!-- container-fluid -->
   	
   </nav> <!-- end navbar -->
+  <br>
+  <br>
+  <br>
+  
+
+  <p class="notice"><%= notice %></p>
 
   <%= yield %>
   <!-- equals sign makes the Ruby between the tags render the output as html, yield tells application where to render view files inside layout -->
