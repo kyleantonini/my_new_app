@@ -39,7 +39,10 @@ body {
 	padding-top: 6px;
 	list-style: none;
 }
-
+.pull-right>li>a {
+	margin-top: -5px;
+	padding: 15px;
+}
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>.active>a,
@@ -47,6 +50,7 @@ body {
 .nav>li>a:focus,
 .nav>li>a:hover {
 	background-color: #9d9d9d;
+	color: #fff;
 	transition: color 300ms;
 	-webkit-transition: color 300ms;
 }
@@ -58,7 +62,7 @@ body {
 .nav a {
 	margin-left: 0;
 }
-@media (max-width: 846px) {
+@media (max-width: 860px) {
 	.navbar-form {
 		display:none;
 	}
