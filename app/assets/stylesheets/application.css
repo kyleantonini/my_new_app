@@ -20,6 +20,7 @@ body {
 }
 
 /*** Navigation Bar ***/
+.nav a,
 .projectName a {
 	color: #9d9d9d;
 	text-decoration: none;
@@ -28,15 +29,23 @@ body {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
 .projectName a:hover {
 	color: #fff;
 	background: #9d9d9d;
 
 }
+.pull-right {
+	padding-top: 6px;
+	list-style: none;
+}
+}
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-inverse .navbar-nav>.active>a:hover,
+.nav>li>a:focus,
+.nav>li>a:hover {
 	background-color: #9d9d9d;
 	transition: color 300ms;
 	-webkit-transition: color 300ms;
@@ -49,7 +58,7 @@ body {
 .nav a {
 	margin-left: 0;
 }
-@media (max-width: 777px) {
+@media (max-width: 846px) {
 	.navbar-form {
 		display:none;
 	}
