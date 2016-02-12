@@ -1,9 +1,11 @@
 == README
 
-This is my first Rails app. Here goes something...
+This is my first Rails app. I am a n00b. Here goes something...
 
 Ruby v2.2.1
 Rails v4.2.5
+
+
 
 Things you may want to cover:
 
