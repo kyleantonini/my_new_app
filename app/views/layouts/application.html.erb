@@ -59,8 +59,13 @@
   <br>
   <br>
   <br>
-
-  <p class="notice"><%= notice %></p>
+  
+  <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p id="alert" class="alert alert-info"><%= alert %></p>
+  <% end %>
 
   <%= yield %>
   <!-- equals sign makes the Ruby between the tags render the output as html, yield tells application where to render view files inside layout -->

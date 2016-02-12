@@ -55,3 +55,6 @@ end
 
 # Authentication gem
 gem 'devise'
+
+# Authorization gem
+gem 'cancancan'

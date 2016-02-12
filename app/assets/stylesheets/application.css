@@ -66,6 +66,10 @@ body {
 		display:none;
 	}
 }
+#alert {
+	color: red;
+}
+
 /*footer*/
 footer {
 	padding-top: 20px;
