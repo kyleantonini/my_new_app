@@ -2,6 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.product-col {
+    float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.product-col>h1,
+.product-col>p,
+.product-col>p>a {
+	text-align: center;
+	margin-left: 0;
+}
+.product-image {
+	margin: 0 auto;
+}
 .edit_product,
 .new_product {
 	margin-left: 20px;
