@@ -1,24 +1,19 @@
-// Place all the styles related to the products controller here.
+// Place all the styles related to the products controller here
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product-col {
-    float: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-.product-col>h1,
-.product-col>p,
-.product-col>p>a {
-	text-align: center;
-	margin-left: 0;
-}
-.product-image {
-	margin: 0 auto;
-}
+
 .edit_product,
-.new_product {
+.new_product,
+.product-reviews,
+.rated {
 	margin-left: 20px;
+}
+.rated {
+	margin-bottom: 1em;
+}
+.new_comment>p {
+	margin-left: 0;
 }
 
 table {
@@ -33,4 +28,15 @@ td {
 
 a {
 	margin-left: 1em;
+}
+p>a {
+	margin-left: 0;
+}
+h4 {
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+// font //
+.btn {
+	font-family: Helvetica, Arial, sans serif;
 }
