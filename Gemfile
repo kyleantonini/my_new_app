@@ -56,6 +56,16 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Guard for running tasks automatically
+  gem 'guard'
+  gem 'guard-rspec', require: false
+
+  # Spork for speeding up tests by loading project environment once
+  gem 'spork-rails'
+
+  # guard-spork plugin to connect guard and spork
+  gem 'guard-spork'
 end
 
 group :production do
