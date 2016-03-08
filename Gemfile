@@ -4,13 +4,12 @@ ruby "2.2.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-
 # Pagination
 gem 'will_paginate', '~> 3.0.5'
-
 # Factory Girl
 gem 'factory_girl_rails', '~> 4.0'
-
+# Stripe for payments
+gem 'stripe'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
