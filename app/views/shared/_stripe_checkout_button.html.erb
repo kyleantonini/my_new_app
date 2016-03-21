@@ -5,4 +5,7 @@
   data-name="<%= @product.name %>"
   data-description="Buy now for <%= number_to_currency(@product.price) %>"
   data-amount="<%= @product.price*100 %>">
+
 </script>
+
+<%= hidden_field_tag(:product_id, @product.id) %>
