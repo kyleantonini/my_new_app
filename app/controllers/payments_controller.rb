@@ -12,6 +12,7 @@ class PaymentsController < ApplicationController
 				:source => token,
 				:description => params[:stripeEmail]
 			)
+			
 
 			if charge.paid
 				Order.create(:product_id, :user_id, :total)
