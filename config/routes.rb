@@ -23,8 +23,8 @@ Rails.application.routes.draw do
   # New route for orders page
   resources :orders, only: [:index, :show, :create, :destroy]
 
-  resources :payments
-  match 'payments', to: 'payments#create', via: [:post]
+  
+  post 'payments/create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
