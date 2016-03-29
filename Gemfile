@@ -80,3 +80,7 @@ gem 'devise'
 
 # Authorization gem
 gem 'cancancan'
+
+gem 'memcachier'
+# Memcache client
+gem 'dalli'

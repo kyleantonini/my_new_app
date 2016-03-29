@@ -1,10 +1,12 @@
 <div class="container">
 <div class="row">
+  
   <div class="col-xs-8 col-sm-7 col-md-5 col-lg-4">
     <%= image_tag(@product.image_url, class: "img-zoom img-responsive product-image", data_zoom_image: @product.image_url) %>
   </div>
-
+  
   <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4">
+    <% cache @product do %>
     <h1><%= @product.name %></h1>
 
     <p>
@@ -25,6 +27,7 @@
     <p>
       Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
     </p>
+    <% end %> <!-- cache -->
 
     <%= form_tag "/payments/create" do %>
       <%= render partial: "shared/stripe_checkout_button" %>
@@ -38,8 +41,9 @@
     <% end %>
 
   </div> <!-- col -->
-
+  
 </div> <!-- row -->
+</div> <!-- container -->
 <br>
 <div class="row">
   <div class="col-xs-10 col-sm-8 col-md-4">
