@@ -84,3 +84,5 @@ gem 'cancancan'
 gem 'memcachier'
 # Memcache client
 gem 'dalli'
+# Redis-rails advanced key store
+gem 'redis-rails'
